@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CredibleBehavioralHealth.Barcode.Model.Model
 {
-    public class Entity
+    public class BarecodeModel 
     {
         public string EntityType { get; set; }
 
