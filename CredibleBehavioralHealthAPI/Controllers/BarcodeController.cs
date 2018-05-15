@@ -1,7 +1,5 @@
 ﻿using CredibleBehavioralHealth.Barcode.Common;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
@@ -13,6 +11,11 @@ namespace CredibleBehavioralHealth.Barcode.API.Controllers
     /// </summary>
     public class BarcodeController : BaseController
     {
+        /// <inheritdoc/>
+        public BarcodeController(ILogger logger): base(logger)
+        {
+
+        }
         /// <summary>
         /// This resource is used to generate barcode.
         /// </summary>
@@ -22,13 +25,13 @@ namespace CredibleBehavioralHealth.Barcode.API.Controllers
         {
             try
             {
-                ErrorLogger.LogInfo("In GenerateBarcode method");
+                _logger.LogInfo("In GenerateBarcode method");
 
                 return Ok("I am working");
             }
             catch(Exception ex)
             {
-                ErrorLogger.LogError(ex.Message);
+                _logger.LogError(ex.Message);
 
                 var response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, 
                     "Unable to generate barcode, please contact system adminstrator.");

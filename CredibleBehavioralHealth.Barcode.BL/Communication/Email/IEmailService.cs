@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CredibleBehavioralHealth.Barcode.BL.Communication.Email
+﻿namespace CredibleBehavioralHealth.Barcode.BL.Communication.Email
 {
     public interface IEmailService
     {
