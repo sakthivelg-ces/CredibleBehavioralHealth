@@ -1,4 +1,6 @@
-﻿using CredibleBehavioralHealth.Barcode.Common;
+﻿using CredibleBehavioralHealth.Barcode.BL.Service;
+using CredibleBehavioralHealth.Barcode.Common;
+using CredibleBehavioralHealth.Barcode.Model.Model;
 using System;
 using System.Net;
 using System.Net.Http;
@@ -11,23 +13,27 @@ namespace CredibleBehavioralHealth.Barcode.API.Controllers
     /// </summary>
     public class BarcodeController : BaseController
     {
-        /// <inheritdoc/>
-        public BarcodeController(ILogger logger): base(logger)
-        {
+        private readonly IService _service;
 
+        /// <inheritdoc/>
+        public BarcodeController(ILogger logger, IService service): base(logger)
+        {
+            this._service = service;
         }
         /// <summary>
         /// This resource is used to generate barcode.
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
-        public IHttpActionResult GenerateBarcode()
+        [HttpPost]
+        public IHttpActionResult GenerateBarcode(BarcodeDetailModel barcodeModel)
         {
             try
             {
                 _logger.LogInfo("In GenerateBarcode method");
 
-                return Ok("I am working");
+                var encryptCode = _service.GenerateEncryptedCode(barcodeModel);
+
+                return Ok(encryptCode);
             }
             catch(Exception ex)
             {

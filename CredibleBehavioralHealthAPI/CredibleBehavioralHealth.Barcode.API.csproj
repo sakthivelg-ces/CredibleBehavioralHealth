@@ -107,7 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
@@ -136,9 +138,25 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.BL\CredibleBehavioralHealth.Barcode.BL.csproj">
+      <Project>{e25393d7-30de-4c97-81ad-e85a05c828ff}</Project>
+      <Name>CredibleBehavioralHealth.Barcode.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Barcode.Common.csproj">
       <Project>{69223f16-49c7-491b-9265-869e54b96876}</Project>
       <Name>CredibleBehavioralHealth.Barcode.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Barcode.Model.csproj">
+      <Project>{9309cfb8-92d2-4002-a472-b51fda6ef766}</Project>
+      <Name>CredibleBehavioralHealth.Barcode.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.Email\CredibleBehavioralHealth.EmailService.csproj">
+      <Project>{7e388293-a599-4ed0-ae03-99462cbfb5db}</Project>
+      <Name>CredibleBehavioralHealth.EmailService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.QRCode.csproj">
+      <Project>{d0e644d6-8f87-4294-bea5-34fdc6977d22}</Project>
+      <Name>CredibleBehavioralHealth.QRCode</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
