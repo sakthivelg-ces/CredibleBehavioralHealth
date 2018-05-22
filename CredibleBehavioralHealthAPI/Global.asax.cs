@@ -1,5 +1,5 @@
-﻿using CredibleBehavioralHealth.Barcode.BL.Service;
-using CredibleBehavioralHealth.Barcode.Common;
+﻿using CredibleBehavioralHealth.BL.Service;
+using CredibleBehavioralHealth.Common;
 using CredibleBehavioralHealth.Email;
 using CredibleBehavioralHealth.QRCode;
 using SimpleInjector;
@@ -7,7 +7,7 @@ using SimpleInjector.Integration.WebApi;
 using SimpleInjector.Lifestyles;
 using System.Web.Http;
 
-namespace CredibleBehavioralHealth.Barcode.API
+namespace CredibleBehavioralHealth.API
 {
     /// <summary>
     /// 
@@ -28,7 +28,7 @@ namespace CredibleBehavioralHealth.Barcode.API
             // Register your types, for instance using the scoped lifestyle:
             container.Register<ILogger, Logger>(Lifestyle.Singleton);
             container.Register<IService, Service>(Lifestyle.Scoped);
-            container.Register<IEmailService, EmailService>(Lifestyle.Singleton);
+            container.Register<IEmailService, EmailService>(Lifestyle.Scoped);
             container.Register<IQRCodeGenerator, QRCodeGenerator>(Lifestyle.Singleton);
             
 

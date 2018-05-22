@@ -1,6 +1,6 @@
-﻿using CredibleBehavioralHealth.Barcode.Model.Model;
+﻿using CredibleBehavioralHealth.Model.Model;
 
-namespace CredibleBehavioralHealth.Barcode.BL.Service
+namespace CredibleBehavioralHealth.BL.Service
 {
     public interface IService
     {

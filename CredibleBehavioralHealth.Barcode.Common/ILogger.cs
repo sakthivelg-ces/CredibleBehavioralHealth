@@ -1,4 +1,4 @@
-﻿namespace CredibleBehavioralHealth.Barcode.Common
+﻿namespace CredibleBehavioralHealth.Common
 {
     public interface ILogger
     {

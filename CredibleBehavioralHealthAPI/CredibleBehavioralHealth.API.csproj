@@ -114,7 +114,7 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\BarcodeController.cs" />
+    <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -138,25 +138,25 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.BL\CredibleBehavioralHealth.Barcode.BL.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.BL\CredibleBehavioralHealth.BL.csproj">
       <Project>{e25393d7-30de-4c97-81ad-e85a05c828ff}</Project>
-      <Name>CredibleBehavioralHealth.Barcode.BL</Name>
+      <Name>CredibleBehavioralHealth.BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Barcode.Common.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Common.csproj">
       <Project>{69223f16-49c7-491b-9265-869e54b96876}</Project>
-      <Name>CredibleBehavioralHealth.Barcode.Common</Name>
+      <Name>CredibleBehavioralHealth.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Barcode.Model.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Model.csproj">
       <Project>{9309cfb8-92d2-4002-a472-b51fda6ef766}</Project>
-      <Name>CredibleBehavioralHealth.Barcode.Model</Name>
+      <Name>CredibleBehavioralHealth.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\CredibleBehavioralHealth.Email\CredibleBehavioralHealth.EmailService.csproj">
       <Project>{7e388293-a599-4ed0-ae03-99462cbfb5db}</Project>
       <Name>CredibleBehavioralHealth.EmailService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.QRCode.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.ImageGene.csproj">
       <Project>{d0e644d6-8f87-4294-bea5-34fdc6977d22}</Project>
-      <Name>CredibleBehavioralHealth.QRCode</Name>
+      <Name>CredibleBehavioralHealth.ImageGene</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

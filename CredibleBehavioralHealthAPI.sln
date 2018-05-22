@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Barcode.API", "CredibleBehavioralHealthAPI\CredibleBehavioralHealth.Barcode.API.csproj", "{2E3B1401-AE0D-4817-9BF3-7C4BAC505B10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.API", "CredibleBehavioralHealthAPI\CredibleBehavioralHealth.API.csproj", "{2E3B1401-AE0D-4817-9BF3-7C4BAC505B10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Barcode.Common", "CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Barcode.Common.csproj", "{69223F16-49C7-491B-9265-869E54B96876}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Common", "CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Common.csproj", "{69223F16-49C7-491B-9265-869E54B96876}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Barcode.BL", "CredibleBehavioralHealth.Barcode.BL\CredibleBehavioralHealth.Barcode.BL.csproj", "{E25393D7-30DE-4C97-81AD-E85A05C828FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.BL", "CredibleBehavioralHealth.Barcode.BL\CredibleBehavioralHealth.BL.csproj", "{E25393D7-30DE-4C97-81AD-E85A05C828FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Barcode.Model", "CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Barcode.Model.csproj", "{9309CFB8-92D2-4002-A472-B51FDA6EF766}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Model", "CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Model.csproj", "{9309CFB8-92D2-4002-A472-B51FDA6EF766}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.EmailService", "CredibleBehavioralHealth.Email\CredibleBehavioralHealth.EmailService.csproj", "{7E388293-A599-4ED0-AE03-99462CBFB5DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.QRCode", "CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.QRCode.csproj", "{D0E644D6-8F87-4294-BEA5-34FDC6977D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.ImageGene", "CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.ImageGene.csproj", "{D0E644D6-8F87-4294-BEA5-34FDC6977D22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -44,27 +44,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barcode\IBarcodeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\IService.cs" />
     <Compile Include="Service\Service.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Barcode.Common.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Common.csproj">
       <Project>{69223f16-49c7-491b-9265-869e54b96876}</Project>
-      <Name>CredibleBehavioralHealth.Barcode.Common</Name>
+      <Name>CredibleBehavioralHealth.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Barcode.Model.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Model.csproj">
       <Project>{9309cfb8-92d2-4002-a472-b51fda6ef766}</Project>
-      <Name>CredibleBehavioralHealth.Barcode.Model</Name>
+      <Name>CredibleBehavioralHealth.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\CredibleBehavioralHealth.Email\CredibleBehavioralHealth.EmailService.csproj">
       <Project>{7e388293-a599-4ed0-ae03-99462cbfb5db}</Project>
       <Name>CredibleBehavioralHealth.EmailService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.QRCode.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.ImageGene.csproj">
       <Project>{d0e644d6-8f87-4294-bea5-34fdc6977d22}</Project>
-      <Name>CredibleBehavioralHealth.QRCode</Name>
+      <Name>CredibleBehavioralHealth.ImageGene</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

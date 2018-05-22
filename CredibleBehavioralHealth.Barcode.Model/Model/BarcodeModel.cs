@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CredibleBehavioralHealth.Barcode.Model.Model
+namespace CredibleBehavioralHealth.Model.Model
 {
     public class BarcodeModel
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace CredibleBehavioralHealth.Barcode.API
+namespace CredibleBehavioralHealth.API
 {
     /// <summary>
     /// 
@@ -20,7 +20,7 @@ namespace CredibleBehavioralHealth.Barcode.API
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "{controller}/{action}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

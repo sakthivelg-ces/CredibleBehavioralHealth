@@ -1,5 +1,5 @@
-﻿using CredibleBehavioralHealth.Barcode.Common;
-using CredibleBehavioralHealth.Barcode.Model.Model;
+﻿using CredibleBehavioralHealth.Common;
+using CredibleBehavioralHealth.Model.Model;
 using CredibleBehavioralHealth.Email;
 using CredibleBehavioralHealth.QRCode;
 using Newtonsoft.Json;
@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace CredibleBehavioralHealth.Barcode.BL.Service
+namespace CredibleBehavioralHealth.BL.Service
 {
     public class Service : IService 
     {

@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="CredibleBehavioralHealth.Barcode.API.WebApiApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="CredibleBehavioralHealth.API.WebApiApplication" Language="C#" %>
