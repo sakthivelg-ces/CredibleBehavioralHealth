@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.EmailService", "CredibleBehavioralHealth.Email\CredibleBehavioralHealth.EmailService.csproj", "{7E388293-A599-4ED0-AE03-99462CBFB5DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.ImageGene", "CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.ImageGene.csproj", "{D0E644D6-8F87-4294-BEA5-34FDC6977D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CredibleBehavioralHealth.CodeService", "CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.CodeService.csproj", "{D0E644D6-8F87-4294-BEA5-34FDC6977D22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

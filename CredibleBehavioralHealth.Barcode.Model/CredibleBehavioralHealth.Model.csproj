@@ -7,8 +7,8 @@
     <ProjectGuid>{9309CFB8-92D2-4002-A472-B51FDA6EF766}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.Barcode.Model</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.Barcode.Model</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.Model</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.Model</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

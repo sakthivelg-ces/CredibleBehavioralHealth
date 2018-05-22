@@ -7,8 +7,8 @@
     <ProjectGuid>{E25393D7-30DE-4C97-81AD-E85A05C828FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.Barcode.BL</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.Barcode.BL</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.BL</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.BL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -61,9 +61,9 @@
       <Project>{7e388293-a599-4ed0-ae03-99462cbfb5db}</Project>
       <Name>CredibleBehavioralHealth.EmailService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.ImageGene.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.CodeService.csproj">
       <Project>{d0e644d6-8f87-4294-bea5-34fdc6977d22}</Project>
-      <Name>CredibleBehavioralHealth.ImageGene</Name>
+      <Name>CredibleBehavioralHealth.CodeService</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

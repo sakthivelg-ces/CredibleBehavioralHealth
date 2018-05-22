@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.Barcode.API</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.Barcode.API</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.API</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.API</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -34,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\CredibleBehavioralHealth.Barcode.API.xml</DocumentationFile>
+    <DocumentationFile>bin\CredibleBehavioralHealth.API.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -154,9 +154,9 @@
       <Project>{7e388293-a599-4ed0-ae03-99462cbfb5db}</Project>
       <Name>CredibleBehavioralHealth.EmailService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.ImageGene.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.CodeService.csproj">
       <Project>{d0e644d6-8f87-4294-bea5-34fdc6977d22}</Project>
-      <Name>CredibleBehavioralHealth.ImageGene</Name>
+      <Name>CredibleBehavioralHealth.CodeService</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

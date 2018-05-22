@@ -7,8 +7,8 @@
     <ProjectGuid>{D0E644D6-8F87-4294-BEA5-34FDC6977D22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.QRCode</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.QRCode</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.CodeService</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.CodeService</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

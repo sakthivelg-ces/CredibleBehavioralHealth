@@ -7,8 +7,8 @@
     <ProjectGuid>{7E388293-A599-4ED0-AE03-99462CBFB5DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.Email</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.Email</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.EmailService</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.EmailService</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
