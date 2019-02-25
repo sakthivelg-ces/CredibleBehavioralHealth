@@ -1,11 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
 using Swashbuckle.Application;
-using CredibleBehavioralHealth.Barcode.API;
+using CredibleBehavioralHealth.API;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace CredibleBehavioralHealth.Barcode.API
+namespace CredibleBehavioralHealth.API
 {
     public class SwaggerConfig
     {
@@ -32,7 +32,7 @@ namespace CredibleBehavioralHealth.Barcode.API
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "CredibleBehavioralHealth.Barcode.API");
+                        c.SingleApiVersion("v1", "CredibleBehavioralHealth.API");
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
@@ -254,7 +254,7 @@ namespace CredibleBehavioralHealth.Barcode.API
 
         private static string GetXmlCommentsPath()
         {
-            string xmlPath = @"bin\CredibleBehavioralHealth.Barcode.API.xml";
+            string xmlPath = @"bin\CredibleBehavioralHealth.API.xml";
 
             return string.Format(@"{0}\{1} ", System.AppDomain.CurrentDomain.BaseDirectory, xmlPath);
         }

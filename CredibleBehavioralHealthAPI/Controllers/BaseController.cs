@@ -1,12 +1,12 @@
-﻿using CredibleBehavioralHealth.Barcode.Common;
+﻿using CredibleBehavioralHealth.Common;
 using System.Web.Http;
 
-namespace CredibleBehavioralHealth.Barcode.API.Controllers
+namespace CredibleBehavioralHealth.API.Controllers
 {
     /// <summary>
     /// 
     /// </summary>
-    public abstract class BaseController : ApiController
+    public abstract class BaseController : System.Web.Http.ApiController
     {
         protected readonly ILogger _logger;
 

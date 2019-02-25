@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.Barcode.API</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.Barcode.API</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.API</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.API</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -34,7 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\CredibleBehavioralHealth.Barcode.API.xml</DocumentationFile>
+    <DocumentationFile>bin\CredibleBehavioralHealth.API.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -107,12 +107,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\BarcodeController.cs" />
+    <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -136,9 +138,25 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Barcode.Common.csproj">
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.BL\CredibleBehavioralHealth.BL.csproj">
+      <Project>{e25393d7-30de-4c97-81ad-e85a05c828ff}</Project>
+      <Name>CredibleBehavioralHealth.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Common\CredibleBehavioralHealth.Common.csproj">
       <Project>{69223f16-49c7-491b-9265-869e54b96876}</Project>
-      <Name>CredibleBehavioralHealth.Barcode.Common</Name>
+      <Name>CredibleBehavioralHealth.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.Barcode.Model\CredibleBehavioralHealth.Model.csproj">
+      <Project>{9309cfb8-92d2-4002-a472-b51fda6ef766}</Project>
+      <Name>CredibleBehavioralHealth.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.Email\CredibleBehavioralHealth.EmailService.csproj">
+      <Project>{7e388293-a599-4ed0-ae03-99462cbfb5db}</Project>
+      <Name>CredibleBehavioralHealth.EmailService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CredibleBehavioralHealth.QRCode\CredibleBehavioralHealth.CodeService.csproj">
+      <Project>{d0e644d6-8f87-4294-bea5-34fdc6977d22}</Project>
+      <Name>CredibleBehavioralHealth.CodeService</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

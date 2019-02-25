@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CredibleBehavioralHealth.Common")]
+[assembly: AssemblyTitle("CredibleBehavioralHealth.QRCode")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CredibleBehavioralHealth.Common")]
+[assembly: AssemblyProduct("CredibleBehavioralHealth.QRCode")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("69223f16-49c7-491b-9265-869e54b96876")]
+[assembly: Guid("d0e644d6-8f87-4294-bea5-34fdc6977d22")]
 
 // Version information for an assembly consists of the following four values:
 //

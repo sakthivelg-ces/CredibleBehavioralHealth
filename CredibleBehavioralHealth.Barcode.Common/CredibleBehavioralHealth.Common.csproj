@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E25393D7-30DE-4C97-81AD-E85A05C828FF}</ProjectGuid>
+    <ProjectGuid>{69223F16-49C7-491B-9265-869E54B96876}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CredibleBehavioralHealth.Barcode.BL</RootNamespace>
-    <AssemblyName>CredibleBehavioralHealth.Barcode.BL</AssemblyName>
+    <RootNamespace>CredibleBehavioralHealth.Common</RootNamespace>
+    <AssemblyName>CredibleBehavioralHealth.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,13 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barcode\IBarcodeService.cs" />
-    <Compile Include="Communication\Email\IEmailService.cs" />
-    <Compile Include="Communication\ICommunicationService.cs" />
-    <Compile Include="Communication\SMS\ISMSService.cs" />
+    <Compile Include="ErrorLogger.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

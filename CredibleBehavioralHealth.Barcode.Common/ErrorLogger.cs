@@ -1,6 +1,6 @@
 ﻿using log4net;
 
-namespace CredibleBehavioralHealth.Barcode.Common
+namespace CredibleBehavioralHealth.Common
 {
     /// <summary>
     /// Error logger class
